@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+}
+
+/* ---------- header ------------------*/
+header {
+    height: 4rem;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #486f5a;
+    color: #ffdab5;        
+    padding: 0 4rem;
+}
+
+header div {
+    display: flex;
+    gap: 2rem;
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.2rem;
+}
+
+/* ---------- main --------------------*/
+
+/*-------------------*/
+.arriba {
+    padding: 8rem 16rem 5rem 16rem;
+    background-color: #486f5a; 
+    text-align: center;
+    color: #ffdab5;         
+    font-size: 1.2rem;
+}
+
+/*---------------------*/
+.intro {
+    display: flex;
+    background-color: #f8fff3; 
+    color: #3c5045;        
+}
+
+.intro img {
+    display: block;
+    width: 47rem;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.intro-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0 8rem;
+}
+
+/*----------------------*/
+.materiales {
+    color: #ffdab5;             
+    margin: 0;
+    background-color: #486f5a; 
+    display: flex;
+}
+
+.materiales img {
+    display: block;
+    width: 48rem;
+    height: auto;
+}
+
+.materiales-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0 8rem;
+}
+
+/*---------------------*/
+.comprar {
+    background-color: #f8fff3; 
+    color: #3c5045;          
+    text-align: center;
+    padding: 3rem;
+}
+
+.productos {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.card {
+    width: 20rem;
+    background-color: #ecefea;  
+    color: #222e27; 
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.card img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 1rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1rem;
+}
+
+.card-body p {
+    flex-grow: 1;
+    margin-bottom: 1rem;
+}
+
+.card-body div {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+/* ---------- footer ------------------*/
+footer {
+    background-color: #486f5a; 
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+footer img {
+    height: 2rem;
+}
+
+
+
+/* ------- TABLET ------- */
+@media (max-width: 1024px) {
+    .arriba {
+        padding: 8rem 4rem 5rem 4rem;
+    }
+
+    .intro, .materiales {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro img,
+    .materiales img {
+        width: 100%;
+        max-height: 50vh;
+        object-fit: cover;
+    }
+
+    .intro-texto,
+    .materiales-texto {
+        padding: 2rem 4rem;
+        text-align: center;
+    }
+
+    .productos {
+        flex-wrap: wrap;
+        gap: 3rem;
+    }
+}
+
+/* ------- CELULAR ------- */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 1rem 2rem;
+        height: auto;
+        gap: 0.5rem;
+    }
+
+    header h2 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    header div {
+        gap: 1rem;
+    }
+
+    header a {
+        font-size: 1rem;
+    }
+
+    .arriba {
+        padding: 7rem 2rem 3rem 2rem;
+        font-size: 1rem;
+    }
+
+    .intro-texto,
+    .materiales-texto {
+        padding: 1.5rem 2rem;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .productos {
+        flex-direction: column;
+        align-items: center;
+    }
+}
