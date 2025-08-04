@@ -13,8 +13,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #486f5a;
-    color: #ffdab5;        
+    background-color: #9cce9c;
+    color: #574b3e;        
     padding: 0 4rem;
 }
 
@@ -34,9 +34,9 @@ header a {
 /*-------------------*/
 .arriba {
     padding: 8rem 16rem 5rem 16rem;
-    background-color: #486f5a; 
+    background-color: #9cce9c; 
     text-align: center;
-    color: #ffdab5;         
+    color: #574b3e;         
     font-size: 1.2rem;
 }
 
@@ -65,9 +65,9 @@ header a {
 
 /*----------------------*/
 .materiales {
-    color: #ffdab5;             
+    color: #574b3e;             
     margin: 0;
-    background-color: #486f5a; 
+    background-color: #9cce9c; 
     display: flex;
 }
 
@@ -147,7 +147,7 @@ header a {
 
 /* ---------- footer ------------------*/
 footer {
-    background-color: #486f5a; 
+    background-color: #9cce9c; 
     display: flex;
     justify-content: center;
     gap: 2rem;
